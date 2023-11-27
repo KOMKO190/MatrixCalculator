@@ -22,7 +22,9 @@ fieldset {
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
 }
 
 .main {
@@ -34,6 +36,7 @@ fieldset {
 
 #matrixDivA {
     width: 25vw;
+    height: 25vw;
     flex-basis: 0;
     flex-grow: 9999;
 }
@@ -56,4 +59,9 @@ input {
     font-size: 12;
     text-align: center;
     font-weight: bold;;
+}
+
+table {
+    display: flex;
+    justify-content: center;
 }
