@@ -123,4 +123,19 @@ function oduzBr(broj,matrica,redoslijed){
     }
 }
 
-module.exports = { mul, zbr, oduz, zbrBr, oduzBr, mulBr };
+function trans(matrica){
+    var rez = [];
+    var rez_red = [];
+
+    for(let i = 0; i < matrica[0].length; i++){
+        for(let j = 0; j < matrica.length; j++){
+            rez_red.push(matrica[j][i]);
+        }
+        rez.push(rez_red);
+        rez_red = [];
+    }
+
+    return rez;
+}
+
+module.exports = { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans };
