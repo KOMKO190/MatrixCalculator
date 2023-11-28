@@ -15,11 +15,13 @@ zbrBr(broj,matrica) -> Pretvara broj u matricu i zbraja matrici.
 
 oduzBr(broj,matrica,z) -> Pretvara broj u matricu i oduzme je sa matricom. Z je redoslijed i primjenjuje se ista sintaksa kao i za mulBr().
 
+trans(matrica) -> Translatira matricu
+
 ----------------------------------------
 
 IMPORT FUNKCIJA
 
-var { mul, zbr, oduz, zbrBr, oduzBr, mulBr } = require(path);
+var { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans } = require(path);
 
 
 Zalijepi kod na početak file-a u kojem misliš koristiti funkcije. Umjesto path napiši gdje ti se nalazi glavni file Matrix.js
