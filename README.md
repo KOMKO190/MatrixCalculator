@@ -4,8 +4,8 @@ Primjenjena Matematika Matrix Calculator
 # Matrix.js
 Sva računanja odvijaju se u `matrix.js` datoteci gdje se nalaze funkcije multiply, divide, transpose, itd...
 
-## Ostalo
-# FUNKCIJE
+# Ostalo
+## FUNKCIJE
 
 mul(a,b) -> Množi matrice tim redoslijedom a * b
 
@@ -24,7 +24,7 @@ oduzBr(broj,matrica,z) -> Pretvara broj u matricu i oduzme je sa matricom. Z je 
 
 trans(matrica) -> Transponira određenu matricu.
 
-# IMPORT FUNKCIJA
+## IMPORT FUNKCIJA
 
 var { mul, zbr, oduz, zbrBr, oduzBr, mulBr } = require(path);
 
