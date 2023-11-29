@@ -4,8 +4,8 @@ Primjenjena Matematika Matrix Calculator
 # Matrix.js
 Sva računanja odvijaju se u `matrix.js` datoteci gdje se nalaze funkcije multiply, divide, transpose, itd...
 
-# Ostalo
-----------------FUNKCIJE----------------
+## Ostalo
+# FUNKCIJE
 
 mul(a,b) -> Množi matrice tim redoslijedom a * b
 
