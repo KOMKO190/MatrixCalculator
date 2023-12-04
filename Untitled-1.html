@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Expression Solver</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.0/math.min.js"></script>
+    </head>
+
+    <body>
+    <script>
+        const math = window.math;
+
+        function rijesiJednadzbu(jednadzba) {
+        try {
+            jednadzba = jednadzba.replace(/M1/g, '[[1, 2], [3, 4]]');
+            jednadzba = jednadzba.replace(/M2/g, '[[5, 6], [7, 8]]');
+
+            const result = math.evaluate(jednadzba);
+
+            console.log(result);
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+        }
+
+        const userInput = prompt('Unesi jednadzbu (npr., 1*M1 + M2):');
+        rijesiJednadzbu(userInput);
+    </script>
+    </body>
+</html>
