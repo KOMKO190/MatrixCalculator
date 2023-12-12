@@ -21,7 +21,7 @@ trans(matrica) -> Translatira matricu
 
 IMPORT FUNKCIJA
 
-var { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans } = require(path);
+var { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans, det } = require(path);
 
 
 Zalijepi kod na početak file-a u kojem misliš koristiti funkcije. Umjesto path napiši gdje ti se nalazi glavni file Matrix.js
