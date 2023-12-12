@@ -138,4 +138,41 @@ function trans(matrica){
     return rez;
 }
 
-module.exports = { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans };
+//funkcija računa determinantu upisane matrice
+function det(matrica) {
+    //uzima se broj redova iz matrice
+    const redovi = matrica.length;
+    //uzima se broj stupaca
+    const stupci = matrica[0].length;
+
+    //provjerava je li je matrica kvadratna
+    if (redovi !== stupci) {
+        throw new Error('Matrica mora biti kvadratna.');
+    }
+
+    //ako je matrica 1x1, vrijednost determinante je taj element
+    if (redovi === 1) {
+        return matrica[0][0];
+    }
+
+    let det = 0;
+    for (let j = 0; j < stupci; j++) {
+        det += matrica[0][j] * kofaktor(matrica, 0, j);
+    }
+
+    return det;
+}
+
+//funkcija za izračunavanje kofaktora za određeni element matrice
+function kofaktor(matrica, red, stupac) {
+    const podmatrica = matrica
+        .map(red => red.slice(0)) //kloniranje matrice
+        .filter((_, i) => i !== red) //uklanjanje reda
+        .map(subred => subred.filter((_, j) => j !== stupac)); //uklanjanje stupca
+
+    const znak = (red + stupac) % 2 === 0 ? 1 : -1;
+
+    return znak * determinanta(podmatrica);
+}
+
+module.exports = { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans, det };
