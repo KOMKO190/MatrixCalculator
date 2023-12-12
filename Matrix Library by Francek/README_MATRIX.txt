@@ -17,6 +17,8 @@ oduzBr(broj,matrica,z) -> Pretvara broj u matricu i oduzme je sa matricom. Z je 
 
 trans(matrica) -> Translatira matricu
 
+det(matrica) -> vraća cijeli broj koji je drterminanta zadane matrice
+
 ----------------------------------------
 
 IMPORT FUNKCIJA
