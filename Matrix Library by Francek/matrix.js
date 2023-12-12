@@ -172,7 +172,7 @@ function kofaktor(matrica, red, stupac) {
 
     const znak = (red + stupac) % 2 === 0 ? 1 : -1;
 
-    return znak * determinanta(podmatrica);
+    return znak * det(podmatrica);
 }
 
 module.exports = { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans, det };
